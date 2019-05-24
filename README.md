@@ -14,7 +14,7 @@ The chosen dataset, to apply the proposed technique, is a set of proprietary ima
 The following steps are proposed to achieve the goal:
 
 ### 1. Image Descriptors Extraction
-An image descriptor (color, texture or shape, is composed of a characteristics vector and a similarity function. In this work, will be used to the descriptor  for color and the descriptor for texture.
+An image descriptor (color, texture or shape) is composed of (i) characteristics vector and (ii) distance function. In this work, will be used the descriptor X for image color and the descriptor Y for image texture.
 
 ### 2. Descriptors Combination
 The combination of the descriptors will be performed with the concatenation between the color and texture vectors of a given image and the with the euclidian distance function, aplied as similarity function between two images.
