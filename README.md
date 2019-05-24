@@ -23,4 +23,4 @@ The combination of the descriptors will be performed with the concatenation betw
 In this step, given a query image (Img) and an integer value (K). The program will return the K images most similar to Img, using the k-Nearest Neighbors (K-NN) algorithm.
 
 ### 4. Accuracy and Recall Calculation
-In this final step, the program will calculate the precision (fraction of recovered images that are relevant) and the recall (fraction of relevant imagens that are retrieved).
+In this final step, the program will calculate the precision (number of correct positive results divided by the number of all positive results returned by the classifier) and the recall (number of correct positive results divided by the number of all relevant samples (all samples that should have been identified as positive)).
