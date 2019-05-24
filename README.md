@@ -13,19 +13,14 @@ The chosen dataset, to apply the proposed technique, is a set of proprietary ima
 ## Steps
 The following steps are proposed to achieve the goal:
 
-1. Image Descriptors Extraction
-
+### 1. Image Descriptors Extraction
 An image descriptor (color, texture or shape, is composed of a characteristics vector and a similarity function. In this work, will be used to the descriptor  for color and the descriptor for texture.
 
-2. Descriptors Combination
-
+### 2. Descriptors Combination
 The combination of the descriptors will be performed with the concatenation between the color and texture vectors of a given image and the with the euclidian distance function, aplied as similarity function between two images.
 
-3. Recovery of K Similar Images
-
+### 3. Recovery of K Similar Images
 In this step, given a query image (Img) and an integer value (K). The program will return the K images most similar to Img, using the K-Means algorithm.
 
-4. Accuracy and Recall Calculation
-
+### 4. Accuracy and Recall Calculation
 In this final step, the program will calculate the precision (fraction of recovered images that are relevant) and the recall (fraction of relevant imagens that are retrieved).
-
