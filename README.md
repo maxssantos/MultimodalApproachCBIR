@@ -27,7 +27,7 @@ In this final step, the program will calculate the precision (number of correct 
 
 ## Program
 There are two programs:
-1. 'code/extractor/feature_extractor.py': responsible for extracting the characteristic vectors (color and texture) of the images
+1. 'code/extractor/feature_extractor.py': responsible for extracting the descriptors (color and texture) of the images set
 2. 'code/cbir/skin_ulcer_cbir.py': responsible for (i) combining the feature vectors (color and shape), (ii) calculating the distances between the query image for all other images and (iii) returning the most similar images to the query image.
 
-The file 'code/extractor/feature_extractor_bib.py' contains a set of functions (created by the author) that are important and necessary for extracting the descriptors of the images. This file is imported by both files described previously.
+The file 'code/extractor/feature_extractor_bib.py' contains a set of functions (created by the author) that are important and necessary for extracting the images descriptors. This file is imported by both files described previously.
