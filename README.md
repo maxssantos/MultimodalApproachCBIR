@@ -10,9 +10,9 @@ Retrieving similar images from large databases is a complex task for the human b
 
 
 ## Description of Input Images
-The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online¹. This data set consists of 322 images with a resolution of 1024 x 1024 pixels. The list is arranged in pairs of imagens, where each pair represents the left (even filename numbers) and right mammograms (odd filename numbers) of a single patient. 
+The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online¹. This data set consists of 322 images with resolution of 1024 x 1024 pixels. The list is arranged in pairs of imagens, where each pair represents the left (even filename numbers) and right mammograms (odd filename numbers) of a single patient. 
 
-In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
+In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing of original images, set as a segmeation step.
 
 ¹: The MINI-MIAS repository: http://peipa.essex.ac.uk/info/mias.html
 
