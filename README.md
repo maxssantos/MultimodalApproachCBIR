@@ -16,11 +16,9 @@ The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic
 
 The properties of gravity (malignant and benign) and class (Calcification (CALC), Well-defined/circumscribed masses (CIRC), Spiculated masses (SPIC), Other ill-defined masses (MISC), Architectural distortion (ARCH), Asymmetry (ASYM), Normal (NORM)) of the abnormality, present in each one of the images, will be important to indicate if, given a query image, the most similar k-images returned by the proposed program belong to the same class and gravity of the query image.
 
-In Figure 1 below, examples of images belonging to each of the classes are displayed: (a) CALC, (b) CIRC, (c) SPIC, (d) MISC, (e) ARCH, (f) ASYM and (g) NORM
+In figure below, examples of images belonging to each of the classes are displayed: (a) CALC, (b) CIRC, (c) SPIC, (d) MISC, (e) ARCH, (f) ASYM and (g) NORM
 
-![CALC Image](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/MIAS-Class-Images-Examples.png "MIAS Class Image Examples"){ width="800" height="600" style="display: block; margin: 0 auto" }
-
-
+![CALC Image](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/MIAS-Class-Images-Examples.png "MIAS Class Image Examples")
 
 
 ## Steps
