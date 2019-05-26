@@ -10,8 +10,8 @@ Retrieving similar images from large databases is a complex task for the human b
 
 
 ## Description of Input Images
-The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online[¹]: The MINI-MIAS repository: http://peipa.essex.ac.uk/info/mias.html. This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
-
+The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online. This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
+¹: The MINI-MIAS repository: http://peipa.essex.ac.uk/info/mias.html
 
 ## Steps
 The following steps are proposed to achieve the goal:
