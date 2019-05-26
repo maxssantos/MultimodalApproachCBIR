@@ -18,7 +18,7 @@ The properties of gravity (malignant and benign) and class (Calcification (CALC)
 
 In Figure 1 below, examples of images belonging to each of the classes are displayed: (a) CALC, (b) CIRC, (c) SPIC, (d) MISC, (e) ARCH, (f) ASYM and (g) NORM
 
-![CALC Image](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/MIAS-Class-Images-Examples.png) "MIAS Class Image Examples"
+![CALC Image](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/MIAS-Class-Images-Examples.png "MIAS Class Image Examples") 
 
 
 
