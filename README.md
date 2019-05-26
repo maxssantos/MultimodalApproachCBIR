@@ -10,7 +10,9 @@ Retrieving similar images from large databases is a complex task for the human b
 
 
 ## Description of Input Images
-The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online. This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
+The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online. This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set. 
+
+The properties of class (Calcification (CALC), Well-defined/circumscribed masses (CIRC), Spiculated masses (SPIC), Other ill-defined masses (MISC),   Architectural distortion (ARCH), Asymmetry (ASYM), Normal (NORM)) and gravity (malignant and benign) of the abnormality present in each one of the images will be important to indicate if, given a query image, the most similar k images returned by the proposed program belong to the same class and gravity of the query image.
 
 ¹: The MINI-MIAS repository: http://peipa.essex.ac.uk/info/mias.html
 
