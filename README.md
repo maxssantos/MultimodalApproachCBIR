@@ -34,9 +34,10 @@ In this final step, the program will calculate the precision (number of correct 
 
 
 ## Program
-There are two programs:
-1. [code/extractor/feature_extractor.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/extractor/feature_extractor.py "Feature Extractor"):  responsible for extracting the descriptors (color and texture) of the images set.
-2. [code/cbir/cbir.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/cbir/cbir.py "Mammographics CBIR"): responsible for (i) combining the feature vectors (color and shape), (ii) calculating the distances between the query image for all other images and (iii) returning the most similar images to the query image.
+There are three programs:
+1. [code/segmentation/roi_segmentation.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/segmentation/roi_segmentation.py "ROI Segmentation"): responsible for segmenting the images in Regions of Interest (ROI), according to the coordinates present in each image.
+2. [code/extractor/feature_extractor.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/extractor/feature_extractor.py "Feature Extractor"):  responsible for extracting the descriptors (color and texture) of the images set.
+3. [code/cbir/cbir.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/cbir/cbir.py "Mammographics CBIR"): responsible for (i) combining the feature vectors (color and shape), (ii) calculating the distances between the query image for all other images and (iii) returning the most similar images to the query image.
 
 The file [code/extractor/feature_extractor_bib.py] (https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/extractor/feature_extractor_bib.py "Feature Extractor") contains a set of functions (created by the author) that are important and necessary for extracting the images descriptors. This file is imported by both files described previously.
 
