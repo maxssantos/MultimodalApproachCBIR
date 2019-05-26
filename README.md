@@ -4,11 +4,16 @@ SCC5830: Digital Image Processing
 
 Maxwell Sampaio dos Santos NUSP: 11186454
 
+
 ## Abstract
 Retrieving similar images from large databases is a complex task for the human being. The purpose of this work is to use one technique for extracting and combining the image descriptors (texture, color and/or shape) to enrich content-based image retrieval in the context of medical images. To analyze the proposed technique, the MINI-MIAS dataset was chosen, composed by 118 valid ROIs of mixed mammogram views. Given a query image will be calculated the accuracy and recall of the content-based image retrieving, as a form of evaluation of the proposed technique. All this work will be implemented in the Python language.
 
+
 ## Description of Input Images
-The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society)  and is available online1. This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
+The chosen dataset, to apply the proposed technique, was MINI-MIAS (Mammographic Image Analysis Society) dataset and it's available online[^1](). This dataset is composed of by 118 valid ROIs (Regions Of Interest) of mixed mammogram views, with various resolutions. In addition to the images, MINI-MIAS provides metadata corresponding to the background tissue, class and severity of the abnormality, as well as coordinates to the center of the abnormality and the approximate radius of a circle enclosing it. Such coordinates and radius allowed us to extract the ROIs from the images, which is important in pre-processing as a segmeation step of original images set.
+
+[^1]: The MINI-MIAS repository: http://peipa.essex.ac.uk/info/mias.html
+
 
 ## Steps
 The following steps are proposed to achieve the goal:
@@ -27,6 +32,7 @@ In this step, given a query image (Img) and an integer value (K). The program wi
 
 ### 5. Accuracy and Recall Calculation
 In this final step, the program will calculate the precision (number of correct positive results divided by the number of all positive results returned by the classifier) and the recall (number of correct positive results divided by the number of all relevant samples, ie, all samples that should have been identified as positive).
+
 
 ## Program
 There are two programs:
