@@ -10,9 +10,9 @@ Retrieving similar images from large databases is a complex task for the human b
 
 
 ## Description of Input Images
-The chosen dataset was DDSM (Digital Dataset for Screening Mammography) [1] and it's available online¹. This data set consists of more than three thousand medical breast images, organized into 4 (four) categories based on the view of the breast image, which are (i) LCC: Left CranioCaudal, (ii) RCC: Right CranioCaudal, (iii) LMLO: Left MedioLateral Oblique, and (iv) RMLO: Right MedioLateral Oblique. DDSM was originally created in a collaborative effort involving the Massachusetts General Hospital, the University of South Africa and the Sandia National Laboratories. Moreover, additional cases were provided by the Washington University School of Medicine. The current DDSM repository is maintained at University of South Florida. DDSM is divided into cases with annotated labels, which are “normal”, “cancer”, or “benign”. In the maximum of four images is assigned to one patient, two for the left breast and two for the right breast.
+The chosen dataset was DDSM (Digital Dataset for Screening Mammography) [1] and it's available online¹. According to Oliveira et al [2], this dataset consists of more than three thousand medical breast images, organized into 4 (four) categories based on the view of the breast image, which are (i) LCC: Left CranioCaudal, (ii) RCC: Right CranioCaudal, (iii) LMLO: Left MedioLateral Oblique, and (iv) RMLO: Right MedioLateral Oblique. DDSM was originally created in a collaborative effort involving the Massachusetts General Hospital, the University of South Africa and the Sandia National Laboratories. Moreover, additional cases were provided by the Washington University School of Medicine. The current DDSM repository is maintained at University of South Florida. DDSM is divided into cases with annotated labels, which are “normal”, “cancer”, or “benign”. In the maximum of four images is assigned to one patient, two for the left breast and two for the right breast.
 
-¹: The DDSM repository: [http://marathon.csee.usf.edu/Mammography/Database.html](http://marathon.csee.usf.edu/Mammography/Database.html)
+¹: The DDSM repository: [http://marathon.csee.usf.edu/Mammography/Database.html](http://marathon.csee.usf.edu/Mammography/Database.html), also available as a Mammoset subdataset at [https://bitbucket.org/gbdi/mammoset/src](https://bitbucket.org/gbdi/mammoset/src)
 
 The diagnoses (N, C and B) and the classification categories (LCC, RCC, LMLO and RMLO) present in each of the images will be important to indicate if, given a query image, the most similar k images returned by the proposed program belong to the same class and the image of the query.
 
@@ -46,3 +46,4 @@ The file [code/extractor/feature_extractor_bib.py](https://github.com/maxssantos
 ## References
 [1] Heath, M., Bowyer, K., Kopans, D., Moore, R., and Kegelmeyer, W. P. (2001). The digital
 database for screening mammography. In IWDM, pages 212–218. Medical Physics.
+[2] Oliveira, Paulo & de Carvalho Scabora, Lucas & Cazzolato, Mirela & Bedo, Marcos & Traina, Agma & Jr, Caetano. (2017). MAMMOSET: An Enhanced Dataset of Mammograms. Proceedings of the Satellite Events of the 32nd Brazilian Symposium on Databases.
