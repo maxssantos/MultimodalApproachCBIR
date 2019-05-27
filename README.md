@@ -19,7 +19,7 @@ The diagnoses (N, C and B) and the classification categories (LCC, RCC, LMLO and
 
 In figure below, examples of images belonging to each of the classes are displayed: (a) LCC, (b) RCC, (c) LMLO and (d) RMLO
 
-![DDSM Image Examples](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/DDSM Image Examples.png "DDSM Image Class Examples")
+![DDSM Image Examples](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/DDSM_Image_Examples.png "DDSM Image Class Examples")
 
 ## Steps
 The following steps are proposed to achieve the goal:
