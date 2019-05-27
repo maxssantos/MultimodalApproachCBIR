@@ -44,6 +44,6 @@ It's composed for two programs:
 The file [code/extractor/feature_extractor_bib.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/extractor/feature_extractor_bib.py "Feature Extractor"): contains a set of functions (created by the author) that are important and necessary for extracting the images descriptors. This file is imported by last two files described previously.
 
 ## References
-[1] Heath, M., Bowyer, K., Kopans, D., Moore, R., and Kegelmeyer, W. P. (2001). The digital
-database for screening mammography. In IWDM, pages 212–218. Medical Physics.
-[2] Oliveira, Paulo & de Carvalho Scabora, Lucas & Cazzolato, Mirela & Bedo, Marcos & Traina, Agma & Jr, Caetano. (2017). MAMMOSET: An Enhanced Dataset of Mammograms. Proceedings of the Satellite Events of the 32nd Brazilian Symposium on Databases.
+[1] Heath, M., Bowyer, K., Kopans, D., Moore, R., and Kegelmeyer, W. P. The digital database for screening mammography. In IWDM, pages 212–218. Medical Physics. 2001
+
+[2] Oliveira, P., Scabora, L. C., Cazzolato, M., Bedo, M., Traina, Agma., Jr, Caetano. MAMMOSET: An Enhanced Dataset of Mammograms. Proceedings of the Satellite Events of the 32nd Brazilian Symposium on Databases. 2017
