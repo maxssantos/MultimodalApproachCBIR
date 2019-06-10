@@ -1,8 +1,9 @@
 5
-/home/maxwell/datasets/D-Ulcer/Images/49.jpg
-211
+/home/maxwell/datasets/DDSM/usf0008_RMLO_L1_MS_M.jpg
+2892
 euclidean
 0.3
-2
-../../descriptors/all/BIC.csv
-../../descriptors/all/LBP.csv
+3
+../../dataset/descriptors/all/description.csv
+../../dataset/descriptors/all/BIC.csv
+../../dataset/descriptors/all/LBP.csv

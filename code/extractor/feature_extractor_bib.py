@@ -26,18 +26,20 @@ def fe(d_in, d_out, d_color='BIC', d_text='LBP', total_images=0):
     hist_t = cl.OrderedDict()
     
     for img in os.listdir(d_in):
-        num = int(img.split('.')[0])
-        
+        ind = img.split('.')[0]
+
         if d_color == 'BIC':
-            hist_c[num] = BIC(d_in+img)
+            hist_c[ind] = BIC(d_in+img)
     
         if d_text == 'LBP':
-            hist_t[num] = LPB(d_in+img)
-
-    #saving the texture feature vector in the output directory
+            hist_t[ind] = LPB(d_in+img)
+    
+    #saving the color feature vector in the output directory
     arq = open(d_out+d_color+'.csv', 'w')
+    arq2 = open(d_out+'description.csv', 'w')
     for ind, val in sorted(hist_c.items(), key=lambda t: t[0]):
         arq.write(",".join(str(x) for x in val) + '\n')
+        arq2.write(str(ind)+"\n")
     arq.close()
 
     #saving the texture feature vector in the output directory
@@ -45,4 +47,5 @@ def fe(d_in, d_out, d_color='BIC', d_text='LBP', total_images=0):
     for ind, val in sorted(hist_t.items(), key=lambda q: q[0]):
         arq.write(",".join(str(x) for x in val) + '\n')
     arq.close()
+    arq2.close()
 #end##############################################################################
