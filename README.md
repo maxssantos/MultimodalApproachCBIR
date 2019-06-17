@@ -10,11 +10,11 @@ Retrieving similar images from large databases is a complex task for the human b
 
 
 ## Description of Input Images
-The chosen dataset was DDSM (Digital Dataset for Screening Mammography) [1] and it's available online¹. According to Oliveira et al [2], this dataset consists of more than three thousand medical breast images, organized into 4 (four) categories based on the view of the breast image, which are (i) LCC: Left CranioCaudal, (ii) RCC: Right CranioCaudal, (iii) LMLO: Left MedioLateral Oblique, and (iv) RMLO: Right MedioLateral Oblique. DDSM was originally created in a collaborative effort involving the Massachusetts General Hospital, the University of South Africa and the Sandia National Laboratories. Moreover, additional cases were provided by the Washington University School of Medicine. The current DDSM repository is maintained at University of South Florida. DDSM is divided into cases with annotated labels, which are "malign", or “benign”. At most four images are captured per patient, two on the left side of the chest and two on the right side.
+The chosen dataset was DDSM (Digital Dataset for Screening Mammography) [1] and it's available online¹. According to Oliveira et al [2], this dataset consists of almost than three thousand medical breast images, organized into 4 (four) categories based on the view of the breast image, which are (i) LCC: Left CranioCaudal, (ii) RCC: Right CranioCaudal, (iii) LMLO: Left MedioLateral Oblique, and (iv) RMLO: Right MedioLateral Oblique. The CranioCaudal (CC) view which is a top-bottom view of the breast and the MedioLateral Oblique (MLO) view which is a side view of the breast taken at a certain angle. DDSM was originally created in a collaborative effort involving the Massachusetts General Hospital, the University of South Africa and the Sandia National Laboratories. Moreover, additional cases were provided by the Washington University School of Medicine. The current DDSM repository is maintained at University of South Florida. DDSM is divided into cases with annotated labels, which are "malign", or “benign”. At most four images are captured per patient, two on the left side of the chest and two on the right side. All images are Region of Interest (ROI) with 1000 x 1000 pixels, filled with zeros, in cases of ROIs with smaller dimensions.
 
 ¹: The DDSM repository: [http://marathon.csee.usf.edu/Mammography/Database.html](http://marathon.csee.usf.edu/Mammography/Database.html), also available as a Mammoset subdataset at [https://bitbucket.org/gbdi/mammoset/src](https://bitbucket.org/gbdi/mammoset/src)
 
-The diagnoses (N, C and B) and the classification categories (LCC, RCC, LMLO and RMLO) present in each of the images will be important to indicate if, given a query image, the k images most similar returned by the proposed program belong to the same class of query image.
+The diagnoses (Malign-M and Benign-B) and the classification categories (LCC, RCC, LMLO and RMLO) present in each of the images wa be important to indicate if, given a query image, the k images most similar returned by the proposed program belong to the same class of query image.
 
 In figure below, examples of images belonging to each of the classes are displayed: (a) LCC, (b) RCC, (c) LMLO and (d) RMLO
 
@@ -24,7 +24,7 @@ In figure below, examples of images belonging to each of the classes are display
 The following steps are proposed to achieve the goal:
 
 ### 1. Image Descriptors Extraction
-An image descriptor (color, texture or shape) is composed of (i) characteristics vector and (ii) distance function. In this work, was be implemented and used the Border/Interior Classification (BIC) as color's descriptor of the image, and the Local Binary Pattern (LBP) as texture's descriptor of the image. Euclidean was defined as a function of distance in this work. This step spent around 80 hours to extract the two characteristics of each of the 2892 images
+An image descriptor (color, texture or shape) is composed of (i) characteristics vector and (ii) distance function. In this work, was be implemented and used the Border/Interior Classification (BIC)[3] as color's descriptor of the image, and the Local Binary Pattern (LBP)[4] as texture's descriptor of the image. Euclidean was defined as a function of distance in this work. This step spent around 80 hours to extract the two features of each of the 2892 images
 
 ### 2. Descriptors Combination
 The combination of the descriptors was be performed with the concatenation between the color and texture vectors of a given image, which made it possible to use a distance / likeness function, for example Euclidean, between any two images in the dataset.
@@ -52,3 +52,7 @@ The file [code/extractor/feature_extractor_bib.py](https://github.com/maxssantos
 [1] Heath, M., Bowyer, K., Kopans, D., Moore, R., and Kegelmeyer, W. P. The digital database for screening mammography. In IWDM, pages 212–218. Medical Physics. 2001
 
 [2] Oliveira, P., Scabora, L. C., Cazzolato, M., Bedo, M., Traina, Agma., Jr, Caetano. MAMMOSET: An Enhanced Dataset of Mammograms. Proceedings of the Satellite Events of the 32nd Brazilian Symposium on Databases. 2017
+
+[3] Stehling, Renato O., Nascimento, Mario A., Falcão, Alexandre X. A compact and efficient image retrieval approach based on border/interior pixel classification. Proceedings of the Eleventh International Conference on Information and Knowledge Management. McLean, Virginia, USA. ACM. ISBN: 1-58113-492-4. 2002 
+
+[4] Timo Ojala, Matti Pietikäinen, David Harwood. A comparative study of texture measures with classification based on featured distributions. Pattern Recognition, Volume 29, Issue 1, Pages 51-59. ISSN 0031-3203. 1996.
