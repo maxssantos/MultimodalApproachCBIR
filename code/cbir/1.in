@@ -1,9 +1,8 @@
-5
-/home/maxwell/datasets/DDSM/usf0008_RMLO_L1_MS_M.jpg
+10
+../../dataset/DDSM/usf0008_RMLO_L1_MS_M.jpg
 2892
 euclidean
-0.3
 3
-../../dataset/descriptors/all/description.csv
-../../dataset/descriptors/all/BIC.csv
-../../dataset/descriptors/all/LBP.csv
+../../descriptors/DDSM/description.csv
+../../descriptors/DDSM/BIC.csv
+../../descriptors/DDSM/LBP.csv
