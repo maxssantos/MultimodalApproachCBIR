@@ -16,7 +16,7 @@ The chosen dataset was DDSM (Digital Dataset for Screening Mammography) [1] and 
 
 The diagnoses (Malign-M and Benign-B) and the classification categories (LCC, RCC, LMLO and RMLO) present in each of the images wa be important to indicate if, given a query image, the k images most similar returned by the proposed program belong to the same class of query image.
 
-In figure below, examples of images belonging to each of the classes are displayed: (a) LCC, (b) RCC, (c) LMLO and (d) RMLO
+In Figure 1 below, examples of images belonging to each of the classes are displayed: (a) LCC, (b) RCC, (c) LMLO and (d) RMLO
 
 ![DDSM Image Examples](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/DDSM_Image_Examples.png "DDSM Image Class Examples")
 
@@ -33,10 +33,14 @@ The combination of the descriptors was be performed with the concatenation betwe
 In this step, given a query image (Img) and an integer value (K). The program will return the K images most similar to Img, using the K-Nearest Neighbors (KNN) algorithm, implemented by author.
 
 ### 4. Classifier Query Image
-It was also created an experiment which used the [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier), available in [sklearn](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors) package Python, to build a program that creates a classifier model. Then an experiment was conducted, iterating k from 1 to 100, to determine the best k value that can optimize the classification accuracy of the constructed model. According to image X the best K was equal to Y. This value of K was then used to reconstruct the classifier model. Lastly, given a query image, the program generates its descriptors (BIC and LBP) and classifies this image, using the template previously created, in one of those 8 classes (4 malign e 4 benign) previously presented.
+It was also created an experiment which used the [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html#sklearn.neighbors.KNeighborsClassifier), available in [sklearn](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors) package Python, to build a program that creates a classifier model. Then an experiment was conducted, iterating k from 1 to 100, to determine the best k value that can optimize the classification accuracy of the constructed model. According to Figure 2 the best K was equal to 5.
+
+![The_Best_K](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/Figure_2.png "The Best K of KNN Classifier")
+
+This value of K was then used to reconstruct the classifier model. Lastly, given a query image, the program generates its descriptors (BIC and LBP) and classifies this image, using the template previously created, in one of those 8 classes (4 malign e 4 benign) previously presented. As a final result we obtained a prediction of about 19% in the built-in classifier model, which is low, and this reflected in the misclassification of the query image, which he accused of being of class RMLO_B being that the image is of class RMLO_M.
 
 ### 5. Accuracy Calculation
-In this final step, the program calculates the precision of the experiments: (i) in the case of step 3 it indicates the precision as the number of similar images belonging to the same class of the query image divided by the total of similar images returned (in this case is k); (ii) in the case of step 4 it indicates the precision based on the construction of the classifier model, where it separates the dataset into training and test.
+In this final step, the program calculates the precision of the experiments: (i) in the case of step 3, it indicates the precision as the number of similar images belonging to the same class of the query image divided by the total of similar images returned (in this case is k); (ii) in the case of step 4 it indicates the precision based on the construction of the classifier model, where it separates the dataset into training and test.
 
 
 ## Program
