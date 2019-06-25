@@ -52,6 +52,16 @@ It's composed for two programs:
 
 The file [code/extractor/feature_extractor_bib.py](https://github.com/maxssantos/MultimodalApproachCBIR/blob/master/code/extractor/feature_extractor_bib.py "Feature Extractor"): contains a set of functions (created by the author) that are important and necessary for extracting the images descriptors. This file is imported by last two files described previously.
 
+##Experiments
+Before performing the experiments it was necessary to extract the BIC and LBP descriptors from each of the 2892 dataset images. A CSV file was generated for each descriptor type, the BIC.csv file, and the LPB.csv file. Each line of the CSV file, in the case of the first file, contains a sequence of 128 comma-separated integers where the first 64 numbers represent the histogram of the inner pixels and the other 64 represent the histogram of the outer pixels. The second CSV file contains a sequence of 256 integers representing the histogram of the local binary pattern found in each of the images. This entire extraction process took about 84 hours to complete, using an Intel (R) Core i7 2.67GHz computer, 8GB of RAM and Ubuntu 18.04 64bit.
+
+The first experiment, according to the input file 1.in, was to perform the prediction of the class of the query image, randomly chosen, "usf0008_RMLO_L1_MS_M" through the KNN, implemented by the author in the file cbir.py. It used a value of k equal to 10, Euclidean distance function and concatenation of the BIC and LBP descriptors, exactly in this sequence, on the set of 2892 images. As a result, the query image erroneously classified as belonging to the class "RMLO_B", it belongs to class "RMLO_M", with 33% accuracy, that is, of the 10 most similar images returned, 3 of them belong to the class "RMLO_B", and therefore the class of the query image should be this, but it was not.
+
+The second experiment, according to input file 2.in, consisted in realizing the discovery of what would be the best value of k to be used in the KNN and then classifying the image "usf0008_RMLO_L1_MS_M". In this experiment, using the KNeighborsClassifier package implemented in the file knn_classifier.py, it was obtained that the best value of k ranging from 1 to 50, was 5, with accuracy of only 19%, and the dataset of 2982 images was divided into 30 % for test and 70% for training. Then, the query image classification prediction was performed, using k equal to 5 and manhattan distance function, in which once again the query image was erroneously classified as belonging to class "RMLO_B", being that it belongs to the class "RMLO_M"
+
+##Conclusion
+As a conclusion of this work it is noticed that the concatenation of the descriptors BIC and LBP (generating a new descriptor) applied to this set of 2982 mammographic images did not obtain satisfactory results and therefore it is important to continue researching other descriptors and/or ways of combining the descriptors to elevate the classification accuracy of the images in this dataset. As well as to test the application of other classification algorithms like those based on rays of similarity coverage and not only in the KNN.
+
 ## References
 [1] Heath, M., Bowyer, K., Kopans, D., Moore, R., and Kegelmeyer, W. P. The digital database for screening mammography. In IWDM, pages 212–218. Medical Physics. 2001
 
