@@ -6,7 +6,7 @@ Maxwell Sampaio dos Santos NUSP: 11186454
 
 
 ## Abstract
-Retrieving similar images from large databases is a complex task for the human being. The purpose of this work is to use one technique for extracting and combining the image descriptors (texture, color and/or shape) to enrich content-based image retrieval in the context of medical images. To analyze the proposed technique, the DDSM dataset was chosen, it's composed of more than three thousand medical breast images. Given a query image will be calculated the accuracy and recall of the content-based image retrieving, as a form of evaluation of the proposed technique. All this work was be implemented in the Python language.
+Retrieving similar images from large databases is a complex task for the human being. The purpose of this work is to use one technique for extracting and combining the image descriptors (texture, color and/or shape) to enrich content-based image retrieval in the context of medical images. To analyze the proposed technique, the DDSM dataset was chosen, it's composed of more than three thousand medical breast images. Given a query image will be calculated the accuracy of the content-based image retrieving, as a form of evaluation of the proposed technique. All this work was be implemented in the Python language.
 
 
 ## Description of Input Images
